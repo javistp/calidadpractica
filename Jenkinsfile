@@ -15,8 +15,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               bat "rmdir  /s /q calidadpractica
-"
+       ///        bat "rmdir  /s /q calidadpractica"
                 bat "git clone https://github.com/javistp/calidadpractica.git"
                 bat "mvn clean -f calidadpractica"
             }
